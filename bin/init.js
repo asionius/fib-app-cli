@@ -1,4 +1,4 @@
-#!/usr/local/bin/fibjs
+#!/usr/bin/env fibjs
 var process = require('process')
 var path = require('path')
 var copy = require('@fibjs/copy')
