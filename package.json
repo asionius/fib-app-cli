@@ -14,5 +14,8 @@
     "keywords": [
         "fibjs",
         "fib-app"
-    ]
+    ],
+    "dependencies": {
+        "@fibjs/copy": "^1.1.1"
+    }
 }

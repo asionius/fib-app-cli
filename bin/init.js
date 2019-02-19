@@ -1,6 +1,7 @@
 #!/usr/local/bin/fibjs
 var process = require('process')
 var path = require('path')
+var copy = require('@fibjs/copy')
 var json_format = (function () {
     var p = [],
         indentConfig = {
@@ -135,9 +136,8 @@ var txt = json_format(info, {
 });
 
 console.log(txt);
-
-process.open('bash', ['-c', `cp -r ${path.resolve(__dirname, '../')}/src/* ${projectDir}`])
-
 var p = console.readLine('Is this ok? (yes)');
+
+copy(`${path.resolve(__dirname, '../src/')}`, projectDir)
 if (p === '' || p === 'yes')
     fs.writeFile(f, txt);
