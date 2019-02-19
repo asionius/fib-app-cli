@@ -1,6 +1,6 @@
 {
     "name": "fib-app-cli",
-    "version": "0.0.1-alpha",
+    "version": "0.0.2",
     "description": "The client to generate web application based on fib-app",
     "repository": {
         "type": "git",
