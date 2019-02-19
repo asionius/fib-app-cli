@@ -1,0 +1,18 @@
+{
+    "name": "fib-app-cli",
+    "version": "0.0.1",
+    "description": "The client to generate web application based on fib-app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/asionius/fib-app-cli.git"
+    },
+    "author": "Asion <asionius@163.com>",
+    "license": "ISC",
+    "bin": {
+        "fib-app-cli": "./bin/init.js"
+    },
+    "keywords": [
+        "fibjs",
+        "fib-app"
+    ]
+}

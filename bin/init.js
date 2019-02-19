@@ -114,6 +114,10 @@ if (info === undefined) {
     if (v !== '')
         info[n] = v;
 });
+["scripts", "devDependencies", "dependencies"].forEach((n)=>{
+    var pkg = require(`${path.resolve(__dirname, '../src/package.json')}`)
+    info[n] = pkg[n]
+})
 
 var projectDir = path.join(process.cwd(), info['name']);
 var v = console.readLine(`project director: ${projectDir} `);

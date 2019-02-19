@@ -1,1 +1,6 @@
-## web application framework based on fib-app
+## web application based on fib-app
+## usage
+```
+npm install
+npm test
+```
