@@ -1,0 +1,6 @@
+const path = require('path')
+exports.AppStore = require('./appstore')
+exports.sessionService = require('./sessionservice')
+exports.logService = require('./logservice')
+exports.kv = require('./kv')
+exports.runtimeDir = path.join(__dirname, '../')

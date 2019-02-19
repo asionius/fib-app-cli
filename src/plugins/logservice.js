@@ -1,0 +1,1 @@
+exports.setupLogService = (ls) => ls.forEach((c) => console.add(c))

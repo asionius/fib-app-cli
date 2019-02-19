@@ -1,0 +1,17 @@
+export APP_SERVER_PORT=
+# export APP_HOT_PLUGED=
+# export APP_OLD_CONN_STR=
+export APP_CONN_STR=
+# export APP_DEV_CONN_STR=
+# export APP_TEST_CONN_STR=
+# export APP_LOG_PATH=
+# export APP_CONN_POOL_LIMIT=
+# export APP_SESSION_CONN_STR=
+# export APP_HOME=
+export APP_MAIL_HOSTNAME=
+export APP_MAIL_PORT=
+export APP_MAIL_USERNAME=
+export APP_MAIL_PASSWORD=
+export APP_API_PUBLIC_PEM_FILE_PATH=
+export APP_API_PRIVATE_PEM_FILE_PATH=
+export FIB_ENV="production"
