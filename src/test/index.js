@@ -20,6 +20,7 @@ try {
 run('../')
 
 run('./user')
+run('./storage')
 run('./tableManage.js')
 
 test.run(console.DEBUG);

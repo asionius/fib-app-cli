@@ -31,6 +31,7 @@ penv.APP_HOME = penv.APP_HOME || penv.HOME
 penv.APP_DEV_CONN_STR = penv.APP_DEV_CONN_STR || `sqlite:${penv.APP_HOME}/app.db`
 penv.APP_TEST_CONN_STR = penv.APP_TEST_CONN_STR || `sqlite:${penv.APP_HOME}/test-app.db`
 penv.APP_LOG_PATH = penv.APP_LOG_PATH || '/var/log/app.log'
+penv.APP_IMG_SERVER = penv.APP_IMG_SERVER || ''
 
 exports.loadKeyFiles = () => {
     penv.APP_API_PUBLIC_PEM_FILE_PATH = penv.APP_API_PUBLIC_PEM_FILE_PATH || path.join(__dirname, './pem/rsa_public_key.pem')

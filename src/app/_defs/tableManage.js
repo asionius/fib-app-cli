@@ -37,7 +37,7 @@ module.exports = (db) => {
                 if (!require('config').isProduction(app.getEnv()))
                     rs = nakedConn.execute(`SELECT name FROM sqlite_master WHERE type='table';`)
                 else
-                    rs = nakedConn.execute(`select table_name name from information_schema.tables where table_schema='iprobe' and table_type='base table';`)
+                    rs = nakedConn.execute(`select table_name name from information_schema.tables where table_schema=${process.env.database} and table_type='base table';`)
                 rs = rs.filter((r) => {
                     if (r.name in classdesc) {
                         r.description = classdesc[r.name]

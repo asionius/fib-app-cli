@@ -7,6 +7,10 @@ exports.ping = (req) => {
         status: 'ok'
     })
 }
+exports.notFound = (req, ext) => {
+    req.response.statusCode = 404
+    req.response.json(errorcode.fillError("没找到文件", ext).error)
+}
 exports.needLogin = (req) => {
     req.response.statusCode = 403
     req.response.json(errorcode.fillError("用户尚未登录, 请先登录").error)
